@@ -1,0 +1,16 @@
+apiVersion: v1
+data:
+  default.conf: |
+    server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+            root /usr/share/nginx/html;
+            index index.html index.htm;
+        }
+    }
+kind: ConfigMap
+metadata:
+  name: product-nginx-config-2t5ttg9h8h
+  namespace: west
