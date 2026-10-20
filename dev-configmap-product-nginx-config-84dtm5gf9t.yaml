@@ -3,6 +3,7 @@ data:
   default.conf: |
     server {
         listen 80;
+        this_directive_is_invalid on;
         server_name localhost;
 
         location / {
@@ -12,5 +13,5 @@ data:
     }
 kind: ConfigMap
 metadata:
-  name: product-nginx-config-2t5ttg9h8h
+  name: product-nginx-config-84dtm5gf9t
   namespace: dev
