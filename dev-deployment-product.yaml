@@ -44,5 +44,5 @@ spec:
           subPath: default.conf
       volumes:
       - configMap:
-          name: product-nginx-config-84dtm5gf9t
+          name: product-nginx-config-2t5ttg9h8h
         name: nginx-config
